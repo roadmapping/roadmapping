@@ -1,18 +1,19 @@
 import React from "react";
-
 import { hot } from 'react-hot-loader/root';
+
+import Nav from "../client/components/Nav";
 
 class App extends React.Component {
   render() {
     return (
-      <>
-        <h1>
-          Hello
-        </h1>
-      </>
+      <div>
+        <Nav />
+          <h1>
+            Hello
+          </h1>
+      </div>
     );
   }
-  //later need to add in the components we want to route to 
 }
 
 export default hot(App);

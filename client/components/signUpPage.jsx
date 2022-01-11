@@ -70,4 +70,4 @@ render() {
   }
 }
 
-export default Login;
+export default Signup;
