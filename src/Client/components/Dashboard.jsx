@@ -16,8 +16,8 @@ const Homepage = () => {
     <div className="dashBoard">
       <div className="LeftSide">
         <div className="LogOut"> Log out</div>
-        {/*}
-        {goals.map(<GoalCard name={goal.name} />)} */}
+
+        {/*{goals.map(<GoalCard name={goal.name} />)}*/}
       </div>
       <div className="RightSide">
         <div className="header">
