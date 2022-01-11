@@ -12,6 +12,6 @@ router.post("/", authenticate, createGoal, (req, res)=>{
     res.send('Goal creation successful');
 });
 
-router.delete('/:id', authenticate, deleteGoal );
+router.delete('/:id', authenticate, deleteGoal);
 
 module.exports = router;
