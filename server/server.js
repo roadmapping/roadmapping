@@ -3,7 +3,7 @@ const app = express();
 const dotenv = require('dotenv').config();
 const goalRoutes = require('./Routes/goalRoutes');
 const userRoutes = require('./Routes/userRoutes');
-
+const cookieParser = require('cookie-parser');
 
 const PORT = 8080;
 //app.use(express.json());
@@ -16,6 +16,7 @@ app.use(
   );
 
 app.use(express.json());
+app.use(cookieParser());
   
 
 //connecting the database

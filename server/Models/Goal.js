@@ -13,15 +13,16 @@ const goalSchema = new Schema(
     },
     completeBy: {
       type: Date,
-      required: true,
-    },
-    user: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
+      // required: true,
+      default: Date.now()
     },
     completed: {
         type: Boolean,
         default: false
+    },
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     }
   },
   { timestamps: true }

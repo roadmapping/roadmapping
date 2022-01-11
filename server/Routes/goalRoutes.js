@@ -1,13 +1,17 @@
 const router = require('express').Router();
+const authenticate = require('../middleware/auth');
+const {getGoals, createGoal, deleteGoal} = require('../Controllers/goalController');
 
 
-router.get("/", (req, res) => {
-    res.send("hi!")
+router.get("/", authenticate, getGoals, (req, res) => {
+    res.json(res.locals.goals)
 });
 
 
-router.post("/", (req, res)=>{
-  res.send(req.body)
+router.post("/", authenticate, createGoal, (req, res)=>{
+    res.send('Goal creation successful');
 });
+
+router.delete('/:id', authenticate, deleteGoal );
 
 module.exports = router;
