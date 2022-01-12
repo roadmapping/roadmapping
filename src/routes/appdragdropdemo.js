@@ -69,7 +69,7 @@ export default class AppDragDropDemo extends Component {
     });
     return (
       <div className="container-drag">
-        <h2 className="header">DRAG & DROP DEMO</h2>
+        <h2 className="header">Take Notes</h2>
 
         <div className="underHeader">
           <div
