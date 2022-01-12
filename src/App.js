@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.scss";
 import { hot } from "react-hot-loader/root";
+import Route from "react-router-dom";
+//import { BrowserRouter }
 
 import { Container } from "react-bootstrap";
 import AuthContainer from '../containers/AuthContainer';
