@@ -4,15 +4,20 @@ import { hot } from "react-hot-loader/root";
 import Route from "react-router-dom";
 //import { BrowserRouter }
 
+import { Container } from "react-bootstrap";
+import AuthContainer from '../containers/AuthContainer';
+
 import NavComponent from "../client/components/NavComponent";
-import Dashboard from "../client/components/Dashboard.jsx";
+import SignInComponent from "../client/components/SignInComponent";
+
 class App extends React.Component {
   render() {
     return (
-      <>
+      <Container>
         <NavComponent />
-        <Dashboard />
-      </>
+        {/* <SignInComponent /> */}
+        <AuthContainer /> 
+      </Container>
     );
   }
 }

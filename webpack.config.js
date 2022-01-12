@@ -30,7 +30,10 @@ const config = {
   devServer: {
     'static': {
       directory: './dist'
-    }
+    },
+    proxy: {
+      '/api/': 'http://localhost:3000',
+    },
   }
 };
 

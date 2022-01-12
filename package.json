@@ -14,6 +14,7 @@
     "dev": "concurrently \"webpack serve --mode development\" \"nodemon server/server.js\""
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.1",
     "bootstrap": "^5.1.3",
