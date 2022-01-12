@@ -1,36 +1,33 @@
-const express = require ('express');
+const express = require("express");
 const app = express();
-const dotenv = require('dotenv').config();
-const goalRoutes = require('./Routes/goalRoutes');
-const userRoutes = require('./Routes/userRoutes');
+const dotenv = require("dotenv").config();
+const goalRoutes = require("./Routes/goalRoutes");
+const userRoutes = require("./Routes/userRoutes");
+const cookieParser = require("cookie-parser");
 
-
-const PORT = 8080;
-//app.use(express.json());
+const PORT = 3000;
 
 //middleware
 app.use(
-    express.urlencoded({
-      extended: true,
-    })
-  );
+  express.urlencoded({
+    extended: true,
+  })
+);
 
 app.use(express.json());
-  
+app.use(cookieParser());
 
 //connecting the database
-const mongoose = require('mongoose'); 
-// const {URI} = require('./Models'); 
+const mongoose = require("mongoose");
+// const {URI} = require('./Models');
 mongoose.connect(process.env.MONGO_URI);
 const database = mongoose.connection;
-database.on('error', (error) => console.error(error));
-database.once('open', () => console.log('database connected')); 
-
+database.on("error", (error) => console.error(error));
+database.once("open", () => console.log("database connected"));
 
 //routes
-app.use('/goals', goalRoutes);
-app.use('/auth', userRoutes);
-
+app.use("/goals", goalRoutes);
+app.use("/auth", userRoutes);
 
 /* Global Error Handling */
 // app.use((err, req, res) => {

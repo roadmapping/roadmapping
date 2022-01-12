@@ -1,15 +1,23 @@
 import React from "react";
-import { hot } from 'react-hot-loader/root';
+import "./App.scss";
+import { hot } from "react-hot-loader/root";
+import Route from "react-router-dom";
+//import { BrowserRouter }
+
+import { Container } from "react-bootstrap";
+import AuthContainer from '../containers/AuthContainer';
+
+import NavComponent from "../client/components/NavComponent";
+import SignInComponent from "../client/components/SignInComponent";
 
 class App extends React.Component {
   render() {
-    const { name } = this.props;
     return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
+      <Container>
+        <NavComponent />
+        {/* <SignInComponent /> */}
+        <AuthContainer /> 
+      </Container>
     );
   }
 }
