@@ -19,7 +19,8 @@ class App extends React.Component {
             paddingBottom: "1rem",
           }}
         >
-          <Link to="/">Home</Link> | <Link to="/goals">Goals</Link>
+          <Link to="/">Home</Link> | <Link to="/goals">Goals</Link> |{" "}
+          <Link to="/appdragdropdemo">AppDragDropDemo</Link>
         </nav>
         <SignInComponent />
       </Container>
