@@ -1,15 +1,15 @@
 import React from "react";
+import "./App.scss";
 import { hot } from "react-hot-loader/root";
-import Homepage from "./client/components/Dashboard.jsx";
+
+import NavComponent from "../client/components/NavComponent";
 
 class App extends React.Component {
   render() {
-    const { name } = this.props;
     return (
-      <div>
-        <h1>Hello {name}</h1>
-        <Homepage />
-      </div>
+      <>
+        <NavComponent />
+      </>
     );
   }
 }

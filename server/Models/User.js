@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require("mongoose");
+const { Schema } = mongoose;
 
 const userSchema = new Schema(
   {
@@ -19,10 +19,12 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    goals: [{
-      type: Schema.Types.ObjectId,
-      ref: 'Goal'
-    }],
+    goals: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Goal",
+      },
+    ],
   },
   { timestamps: true }
 );

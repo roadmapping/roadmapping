@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const goalSchema = new Schema(
   {
@@ -13,20 +13,19 @@ const goalSchema = new Schema(
     },
     completeBy: {
       type: Date,
-      // required: true,
-      default: Date.now()
+      default: Date.now(),
     },
     completed: {
-        type: Boolean,
-        default: false
+      type: Boolean,
+      default: false,
     },
     user: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    }
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   { timestamps: true }
-)
+);
 
 const Goal = mongoose.model("Goal", goalSchema);
 
