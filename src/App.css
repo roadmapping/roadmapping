@@ -43,3 +43,26 @@
   margin: 5px auto;
   line-height: 5em;
 }
+textarea {
+  width: 900px;
+  height: 500px;
+  background-color: cornsilk;
+}
+.underHeader {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(211, 221, 221);
+  height: 100%;
+}
+.area {
+  display: flex;
+  flex-direction: column;
+}
+#save {
+  width: 50px;
+  height: 50px;
+  /* background-color: blue; */
+}
+#newGoal {
+  width: 100%;
+}
