@@ -6,3 +6,6 @@ export const ENTER_GOAL_TITLE = 'ENTER_GOAL_TITLE';
 export const ENTER_GOAL_INFO = 'ENTER_GOAL_INFO';
 export const ADD_GOAL_SUBMIT = 'ADD_GOAL_SUBMIT';
 export const DELETE_GOAL = 'DELETE_GOAL';
+
+
+export const TOGGLE_LOGIN = 'TOGGLE_LOGIN';
