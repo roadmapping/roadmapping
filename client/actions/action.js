@@ -1,6 +1,12 @@
 import * as types from '../constants/actionTypes';
 import axios from 'axios';
 
+
+export const toggleLoginActionCreator = () => ({
+  type: types.TOGGLE_LOGIN,
+})
+
+
 export const enterUsernameActionCreator = (input) => ({
   type: types.ENTER_USERNAME,
   payload: input,

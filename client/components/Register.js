@@ -1,14 +1,21 @@
 import React from "react";
-
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
 
-export default function SignInComponent(props) {
+function Register(props) {
   console.log(props)
   return (
     <Container>
-      <Form>
+    <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>First Name</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Last Name</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+        </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -20,6 +27,10 @@ export default function SignInComponent(props) {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Confirm Password</Form.Label>
+          <Form.Control type="password" placeholder="Password" />
+        </Form.Group>
         <Button variant="primary" type="submit">
           Sign In
         </Button>{" "}
@@ -27,6 +38,8 @@ export default function SignInComponent(props) {
           Sign Up
         </Button>
       </Form>
-    </Container>
+      </Container>
   );
 }
+
+export default Register;

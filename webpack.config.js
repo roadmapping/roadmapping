@@ -31,9 +31,9 @@ const config = {
     'static': {
       directory: './dist'
     },
-    proxy: {
-      '/api/': 'http://localhost:3000',
-    },
+    // proxy: {
+    //   '/api/': 'http://localhost:3000',
+    // },
   }
 };
 

@@ -5,7 +5,7 @@ const goalRoutes = require("./Routes/goalRoutes");
 const userRoutes = require("./Routes/userRoutes");
 const cookieParser = require("cookie-parser");
 
-const PORT = 3000;
+const PORT = 8080;
 
 //middleware
 app.use(
