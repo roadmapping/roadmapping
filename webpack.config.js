@@ -30,10 +30,20 @@ const config = {
     ],
   },
   devServer: {
+<<<<<<< HEAD
     static: {
       directory: "./dist",
     },
   },
+=======
+    'static': {
+      directory: './dist'
+    },
+    proxy: {
+      '/api/': 'http://localhost:3000',
+    },
+  }
+>>>>>>> dev
 };
 
 module.exports = config;
