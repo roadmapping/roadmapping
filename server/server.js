@@ -29,6 +29,10 @@ database.once("open", () => console.log("database connected"));
 app.use("/goals", goalRoutes);
 app.use("/auth", userRoutes);
 
+// app.get("/Dashboard", (req, re) => {
+//   res.sendFile(path.resolve(__dirname, "../client/components/Dashboard.jsx"));
+// });
+
 /* Global Error Handling */
 // app.use((err, req, res) => {
 //   console.error(err.message);

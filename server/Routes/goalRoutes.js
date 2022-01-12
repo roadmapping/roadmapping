@@ -14,6 +14,10 @@ router.post("/", authenticate, createGoal, (req, res) => {
   res.send("Goal creation successful");
 });
 
+// router.get("/home", (req, res) => {
+//   res.sendFile(path.resolve(__dirname, "../client/componenets/Dashboard.jsx"));
+// });
+
 router.delete("/:id", authenticate, deleteGoal);
 
 module.exports = router;
