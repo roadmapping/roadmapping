@@ -3,6 +3,7 @@ import "./App.scss";
 import { hot } from "react-hot-loader/root";
 
 import { Container } from "react-bootstrap";
+import AuthContainer f
 
 import NavComponent from "../client/components/NavComponent";
 import SignInComponent from "../client/components/SignInComponent";
@@ -12,7 +13,8 @@ class App extends React.Component {
     return (
       <Container>
         <NavComponent />
-        <SignInComponent />
+        {/* <SignInComponent /> */}
+
       </Container>
     );
   }
